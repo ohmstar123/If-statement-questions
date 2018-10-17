@@ -33,12 +33,13 @@
             this.colorInput = new System.Windows.Forms.TextBox();
             this.shapeInput = new System.Windows.Forms.TextBox();
             this.enterButton = new System.Windows.Forms.Button();
+            this.resetButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // colorLabel
             // 
             this.colorLabel.AutoSize = true;
-            this.colorLabel.Location = new System.Drawing.Point(137, 108);
+            this.colorLabel.Location = new System.Drawing.Point(317, 112);
             this.colorLabel.Name = "colorLabel";
             this.colorLabel.Size = new System.Drawing.Size(144, 13);
             this.colorLabel.TabIndex = 0;
@@ -47,7 +48,7 @@
             // shapeLabel
             // 
             this.shapeLabel.AutoSize = true;
-            this.shapeLabel.Location = new System.Drawing.Point(137, 162);
+            this.shapeLabel.Location = new System.Drawing.Point(317, 169);
             this.shapeLabel.Name = "shapeLabel";
             this.shapeLabel.Size = new System.Drawing.Size(194, 13);
             this.shapeLabel.TabIndex = 1;
@@ -55,14 +56,14 @@
             // 
             // colorInput
             // 
-            this.colorInput.Location = new System.Drawing.Point(390, 108);
+            this.colorInput.Location = new System.Drawing.Point(615, 105);
             this.colorInput.Name = "colorInput";
             this.colorInput.Size = new System.Drawing.Size(23, 20);
             this.colorInput.TabIndex = 2;
             // 
             // shapeInput
             // 
-            this.shapeInput.Location = new System.Drawing.Point(390, 162);
+            this.shapeInput.Location = new System.Drawing.Point(615, 162);
             this.shapeInput.Name = "shapeInput";
             this.shapeInput.Size = new System.Drawing.Size(130, 20);
             this.shapeInput.TabIndex = 3;
@@ -77,16 +78,29 @@
             this.enterButton.UseVisualStyleBackColor = true;
             this.enterButton.Click += new System.EventHandler(this.enterButton_Click);
             // 
+            // resetButton
+            // 
+            this.resetButton.Location = new System.Drawing.Point(657, 367);
+            this.resetButton.Name = "resetButton";
+            this.resetButton.Size = new System.Drawing.Size(88, 45);
+            this.resetButton.TabIndex = 5;
+            this.resetButton.Text = "Reset";
+            this.resetButton.UseVisualStyleBackColor = true;
+            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.resetButton);
             this.Controls.Add(this.enterButton);
             this.Controls.Add(this.shapeInput);
             this.Controls.Add(this.colorInput);
             this.Controls.Add(this.shapeLabel);
             this.Controls.Add(this.colorLabel);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -101,6 +115,7 @@
         private System.Windows.Forms.TextBox colorInput;
         private System.Windows.Forms.TextBox shapeInput;
         private System.Windows.Forms.Button enterButton;
+        private System.Windows.Forms.Button resetButton;
     }
 }
 
